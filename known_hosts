@@ -1,0 +1,5 @@
+# place known mac addreses and corresponding names of hosts in this file 
+# sybtax is NAME MAC IP (names are case-sensitive)
+
+# example_serv aa:aa:aa:aa:aa:aa 192.168.1.13
+
