@@ -2,6 +2,7 @@
 
 TARGET="$1"
 IP_ADD="$2" 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 find_target() {
     local NAME="$1"
@@ -11,7 +12,7 @@ find_target() {
             echo "$mac $ip"
             return 0
         fi
-    done < known_hosts
+    done < "$SCRIPT_DIR/known_hosts"
 
     return 1
 }
